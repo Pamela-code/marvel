@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marvel/view/character_view.dart';
+import 'package:marvel/character_view.dart';
 
 void main() {
   runApp(const MyApp());
