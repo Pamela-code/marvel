@@ -62,24 +62,37 @@ class _CharacterViewState extends State<CharacterView> {
                           onTap: () => showModalBottomSheet(
                             context: context,
                             builder: (BuildContext context) {
-                              return Container(
-                                margin: const EdgeInsets.only(
-                                  top: 60,
-                                  left: 40,
-                                  right: 40,
-                                ),
-                                child: SingleChildScrollView(
-                                  child: Column(
-                                    children: [
-                                      Text(
+                              return SingleChildScrollView(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      margin: const EdgeInsets.only(
+                                          top: 15, left: 15),
+                                      child: const Text(
+                                        'Sobre o personagem',
+                                        style: TextStyle(
+                                          fontSize: 25,
+                                          color: Colors.red,
+                                          fontWeight: FontWeight.w700,
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      margin: const EdgeInsets.only(
+                                        top: 30,
+                                        left: 40,
+                                        right: 40,
+                                      ),
+                                      child: Text(
                                         snapshot.data![index].description,
                                         textAlign: TextAlign.justify,
                                         style: const TextStyle(
                                           fontSize: 18,
                                         ),
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                  ],
                                 ),
                               );
                             },
