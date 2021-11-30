@@ -13,14 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-      
-        primarySwatch: Colors.blue,
+        fontFamily: 'Montserrat',
+        primarySwatch: Colors.red,
       ),
       home: const CharacterView(),
     );
   }
 }
-
-
-
-

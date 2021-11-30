@@ -14,7 +14,8 @@ class MarvelService {
           (map) => CharacterModel(
               comics: map['comics'],
               description: map['description'],
-              name: map['name']),
+              name: map['name'],
+              img: map['img']),
         )
         .toList();
     return characters;
