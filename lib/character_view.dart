@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:marvel/character_model.dart';
+import 'package:marvel/description_modal.dart';
 import 'package:marvel/marvel_service.dart';
 
 class CharacterView extends StatefulWidget {
@@ -62,38 +63,8 @@ class _CharacterViewState extends State<CharacterView> {
                           onTap: () => showModalBottomSheet(
                             context: context,
                             builder: (BuildContext context) {
-                              return SingleChildScrollView(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      margin: const EdgeInsets.only(
-                                          top: 15, left: 15),
-                                      child: const Text(
-                                        'Sobre o personagem',
-                                        style: TextStyle(
-                                          fontSize: 25,
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                    ),
-                                    Container(
-                                      margin: const EdgeInsets.only(
-                                        top: 30,
-                                        left: 40,
-                                        right: 40,
-                                      ),
-                                      child: Text(
-                                        snapshot.data![index].description,
-                                        textAlign: TextAlign.justify,
-                                        style: const TextStyle(
-                                          fontSize: 18,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
+                              return DescriptionModal(
+                                index: index,
                               );
                             },
                           ),
