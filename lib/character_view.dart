@@ -61,6 +61,9 @@ class _CharacterViewState extends State<CharacterView> {
                             ],
                           ),
                           onTap: () => showModalBottomSheet(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15.0),
+                            ),
                             context: context,
                             builder: (BuildContext context) {
                               return DescriptionModal(
