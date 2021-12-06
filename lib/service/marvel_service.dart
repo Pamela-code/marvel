@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:marvel/model/character_model.dart';
+import '../model/character_model.dart';
 
 class MarvelService {
   final url =

@@ -1,9 +1,9 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:marvel/model/character_model.dart';
-import 'package:marvel/widgets/description_modal.dart';
-import 'package:marvel/service/marvel_service.dart';
+import '../model/character_model.dart';
+import '../widgets/description_modal.dart';
+import '../service/marvel_service.dart';
 
 class CharacterView extends StatefulWidget {
   const CharacterView({Key? key}) : super(key: key);

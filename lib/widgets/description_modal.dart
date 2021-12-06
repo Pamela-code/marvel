@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:marvel/model/character_model.dart';
-import 'package:marvel/service/marvel_service.dart';
+import '../model/character_model.dart';
+import '../service/marvel_service.dart';
 
 class DescriptionModal extends StatefulWidget {
   const DescriptionModal({Key? key, required this.index}) : super(key: key);
