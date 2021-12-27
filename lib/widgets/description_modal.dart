@@ -4,7 +4,7 @@ import '../service/marvel_service.dart';
 
 class DescriptionModal extends StatefulWidget {
   const DescriptionModal({Key? key, required this.index}) : super(key: key);
-  final index;
+  final int index;
 
   @override
   _DescriptionModalState createState() => _DescriptionModalState();
